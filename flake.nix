@@ -100,7 +100,7 @@
 
               shell = {
                 withHoogle = true;
-                exactDeps = true;
+                exactDeps = false;
 
                 tools = {
                   # haskell-language-server = { }; # FIXME(bladyjoker): Can't use this really until we upgrade GHC
