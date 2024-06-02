@@ -14,7 +14,7 @@
     };
 
     CHaP = {
-      url = "github:input-output-hk/cardano-haskell-packages?ref=repo";
+      url = "github:intersectmbo/cardano-haskell-packages?ref=repo";
       flake = false;
     };
 
@@ -93,9 +93,7 @@
             pkgsForHaskellNix.haskell-nix.cabalProject {
               name = "plutip-core";
               src = ./.;
-              inputMap = {
-                "https://input-output-hk.github.io/cardano-haskell-packages" = CHaP;
-              };
+              inputMap = { "https://chap.intersectmbo.org/" = CHaP; };
               compiler-nix-name = "ghc8107";
 
               shell = {
